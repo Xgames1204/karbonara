@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Карбонара — ресторан итальянской кухни в Ростове-на-Дону. Меню, адрес и контакты." />
+  <title>Карбонара — ресторан в Ростове-на-Дону</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="logo" href="#top" aria-label="Карбонара — главная"><span class="logo-mark">C<span>•</span></span><span>КАРБОНАРА<small>RISTORANTE · ROSTOV</small></span></a>
+      <nav aria-label="Основная навигация"><a href="#menu">Меню</a><a href="#about">О ресторане</a><a href="#contacts">Контакты</a></nav>
+      <a class="top-phone" href="tel:+79281477823">+7 (928) 147-78-23</a>
+      <button class="menu-toggle" aria-label="Открыть меню навигации" aria-expanded="false"><span></span><span></span></button>
+    </div>
+    <nav class="mobile-nav" aria-hidden="true"><a href="#menu">Меню</a><a href="#about">О ресторане</a><a href="#contacts">Контакты</a><a href="tel:+79281477823">Позвонить</a></nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-photo" role="img" aria-label="Паста на столе в итальянском ресторане"></div>
+      <div class="hero-shade"></div>
+      <div class="wrap hero-content">
+        <div class="overline"><span></span> ИТАЛЬЯНСКАЯ КУХНЯ · РОСТОВ-НА-ДОНУ</div>
+        <h1>Паста — это<br><em>про любовь.</em></h1>
+        <p>Итальянское настроение, паста и пицца из печи, десерты и долгие разговоры за столом.</p>
+        <div class="hero-buttons"><a class="button button-light" href="#menu">Смотреть меню <b>↓</b></a><a class="hero-phone" href="tel:+79281477823">Позвонить <span>↗</span></a></div>
+        <div class="hero-rating"><span>★★★★★</span><b>5,0</b> · 162 оценки на Яндекс Картах <i></i> Средний чек от 1 000 ₽</div>
+      </div>
+      <div class="hero-index">01 <span>/</span> ROSTOV · ITALIAN TABLE</div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="wrap">
+        <div class="menu-head">
+          <div><div class="overline ink"><span></span> ЧТО БУДЕТ НА СТОЛЕ</div><h2>Меню <em>Карбонара</em></h2></div>
+          <p>Выбирайте настроение. Найдите блюдо по названию или откройте нужный раздел.</p>
+        </div>
+        <div class="menu-browser">
+          <label class="search-box"><span class="search-icon">⌕</span><input id="menu-search" type="search" placeholder="Поиск по названию" aria-label="Поиск по меню"><kbd>⌘ K</kbd></label>
+          <div class="category-list" id="category-list" aria-label="Категории меню">
+            <button class="category active" data-category="all">Всё меню</button>
+            <button class="category" data-category="drinks">Бутылочные напитки</button>
+            <button class="category" data-category="dessert">Десерты</button>
+            <button class="category" data-category="kids">Детское меню</button>
+            <button class="category" data-category="extra">Дополнительно</button>
+            <button class="category" data-category="breakfast">Завтраки</button>
+            <button class="category" data-category="snacks">Закуски</button>
+            <button class="category" data-category="coffee">Кофе</button>
+            <button class="category" data-category="lemonade">Лимонады</button>
+            <button class="category" data-category="milkshakes">Молочные коктейли</button>
+            <button class="category" data-category="mors">Морс и фреш</button>
+            <button class="category" data-category="meat">Мясо и рыба</button>
+            <button class="category" data-category="pasta">Паста и ризотто</button>
+            <button class="category" data-category="pizza">Пицца из печи</button>
+            <button class="category" data-category="salads">Салаты</button>
+            <button class="category" data-category="soups">Супы</button>
+          </div>
+          <div class="menu-divider"><span id="menu-label">Выбор гостей</span><span id="results-count">3 позиции</span></div>
+          <div class="dishes" id="dishes">
+            <article class="dish" data-category="pasta" data-search="паста болоньезе мраморная говядина свинина">
+              <div class="dish-copy"><h3>Паста Болоньезе</h3><p>Болоньезе из мраморной говядины и свинины с томатным соусом.</p><small>370 г</small></div><b class="price">790 ₽</b>
+            </article>
+            <article class="dish" data-category="meat" data-search="котлеты цыпленок картофельное пюре">
+              <div class="dish-copy"><h3>Котлеты из цыплёнка с картофельным пюре</h3><p>Куриные котлеты со сливочным пюре и петрушкой.</p><small>225 г</small></div><b class="price">890 ₽</b>
+            </article>
+            <article class="dish" data-category="soups" data-search="куриный бульон фрикадельки лапша">
+              <div class="dish-copy"><h3>Куриный бульон с фрикадельками</h3><p>Куриный бульон, фрикадельки, яичная лапша и свежая петрушка.</p><small>330 г</small></div><b class="price">540 ₽</b>
+            </article>
+          </div>
+          <div class="empty-state" id="empty-state" hidden>В этом разделе пока нет опубликованных позиций.<br><span>Уточните наличие и актуальное меню по телефону.</span></div>
+          <div class="menu-disclaimer">Состав и цены показаны по данным карточки ресторана в Яндекс Картах. Актуальность меню уточняйте у ресторана.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="wrap about-grid">
+        <div class="about-art"><div class="plate"><span>BUON<br>APPETITO</span><i></i></div><div class="about-seal">A TAVOLA<br><b>INSIEME</b></div></div>
+        <div class="about-copy"><div class="overline ink"><span></span> КАРБОНАРА · РОСТОВ-НА-ДОНУ</div><h2>Собираемся<br><em>за одним столом.</em></h2><p>Паста и ризотто, пицца из печи, любимые блюда для взрослых и детей. Приходите на обед, встречайтесь с друзьями или закажите любимое с собой.</p><div class="features"><span>Итальянская кухня</span><span>Можно с детьми</span><span>Еда навынос</span><span>Можно с собакой</span></div><div class="average"><small>СРЕДНИЙ ЧЕК</small><b>1 000–3 000 ₽</b></div></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacts">
+      <div class="wrap contact-layout">
+        <div><div class="overline"><span></span> ЖДЁМ ВАС</div><h2>Найдите<br><em>своё место.</em></h2><div class="contact-info"><div><small>АДРЕС</small><b>Будённовский проспект,<br>59А/17А, Ростов-на-Дону</b></div><div><small>ТЕЛЕФОН</small><a href="tel:+79281477823">+7 (928) 147-78-23</a></div><div><small>СЕГОДНЯ</small><b>Открыто до 23:00</b></div></div><a class="button button-lime" target="_blank" rel="noreferrer" href="https://yandex.ru/maps/39/rostov-na-donu/?ll=39.705792%2C47.225708&mode=poi&poi%5Bpoint%5D=39.704178%2C47.226362&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D50823706801&z=18.77">Маршрут на Яндекс Картах <b>↗</b></a></div>
+        <a class="map-card" target="_blank" rel="noreferrer" href="https://yandex.ru/maps/39/rostov-na-donu/?ll=39.705792%2C47.225708&mode=poi&poi%5Bpoint%5D=39.704178%2C47.226362&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D50823706801&z=18.77" aria-label="Открыть ресторан Карбонара на Яндекс Картах"><span class="map-grid"></span><span class="map-road"></span><span class="map-pin">C</span><b>БУДЁННОВСКИЙ, 59А/17А</b><small>ОТКРЫТЬ КАРТУ ↗</small></a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><a class="logo" href="#top"><span class="logo-mark">C<span>•</span></span><span>КАРБОНАРА<small>RISTORANTE · ROSTOV</small></span></a><span>Итальянское настроение в Ростове-на-Дону</span><a href="#top">Наверх ↑</a></div></footer>
+  <script src="./script.js"></script>
+</body>
+</html>
